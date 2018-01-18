@@ -7,7 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525">
     <Grid>
-        <Image x:Name="imagedata"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="90*"/>
+            <RowDefinition Height="10*"/>
+        </Grid.RowDefinitions>
+        <Image Grid.Row="0" x:Name="imagedata"/>
+        <Button x:Name="btn" Grid.Row="1" Content="button" Click="btn_Click"/>
     </Grid>
 
 </Window>
